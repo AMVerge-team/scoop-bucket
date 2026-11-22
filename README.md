@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AMVerge-team/AMVerge/main/frontend/src/assets/amverge_title_gif.gif" alt="AMVerge Logo" width="1440"/>
+  <img src="assets/AMVerge-Scoop.gif" alt="AMVerge Scoop" width="1440"/>
 </p>
 
 # AMVerge Scoop Bucket
@@ -54,6 +54,8 @@ scoop-bucket/
 ├── .github/
 │   └── workflows/
 │       └── excavator.yml   # Automated manifest version & hash updater
+├── assets/
+│   └── AMVerge-Scoop.gif   # Animated RGB banner
 ├── bucket/
 │   └── amverge.json        # Scoop manifest for AMVerge
 └── README.md
