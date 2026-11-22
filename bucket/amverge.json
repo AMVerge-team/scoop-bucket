@@ -1,0 +1,37 @@
+{
+    "version": "2.0.5",
+    "description": "High-performance anime and video scene cutter by Crptk, Moongetsu & team.",
+    "homepage": "https://amverge.com",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AMVerge-team/AMVerge/releases/download/v2.0.5/AMVerge_2.0.5_x64-setup.exe#/dl.7z",
+            "hash": "0190f0e75dd7e2b2ef1b98fac7963764d7e2a48f86c13762b7f12af78494d816"
+        }
+    },
+    "pre_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Force -Recurse -ErrorAction SilentlyContinue"
+    ],
+    "bin": [
+        [
+            "AMVerge.exe",
+            "amverge"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "AMVerge.exe",
+            "AMVerge"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/AMVerge-team/AMVerge"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AMVerge-team/AMVerge/releases/download/v$version/AMVerge_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
